@@ -1,0 +1,185 @@
+/*--------------------------
+        Google Fonts
+------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* ---------------------------------
+             Common style
+    ------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h2{
+    font-size: 28px;
+    color: #3A3A3A;
+}
+h3{
+    font-size: 16px;
+    color: #3A3A3A;
+}
+p{
+    font-size: 14px;
+    color: #787885;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.hero-section-right:hover{
+    transform: scale(0.80);
+}
+/* ---------------------------------
+            Navigation
+    ------------------------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container, h2{
+    font-size: 24px;
+    color: #3A3A3A;
+}
+.navigation, li{
+    display: flex;
+    list-style: none;
+    height: 50px;
+    align-items: center;
+    margin: 10px;
+}
+.navigation li a{
+    text-decoration: none;
+    color: #3A3A3A;
+}
+/* ---------------------------------
+             Hero Section
+    ------------------------------*/
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: end
+}
+#hero-heading{
+    font-size: 52px;
+    line-height: 70px;
+}
+button{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 24px;
+    margin-top: 16px;
+    border: 0;
+    border-radius: 50px;
+    background-color: #E02C6D;
+}
+.hero-section-right img{
+    height: 475px;
+    width: 475px;
+}
+/* ---------------------------------
+       OTHERS LOGO STYLE
+    ------------------------------*/
+.logos{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 25px;
+    align-items: center;
+    justify-items: center;
+}
+
+/* ------------------------------------------
+        PRODUCT COLLECTION STYLE
+-------------------------------------------*/
+
+.products> h2{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.products> h3{
+    text-align: end;
+    color: #E02C6D;
+    padding-top: 50px;
+}
+.popular-products-collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.product{
+    width: 360px;
+    height: 475px;
+    padding: 17px 15px;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: bold;
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.1);
+}
+.product img{
+    width: 100%;
+    height: 255px;
+    border-radius: 7px;
+    
+}
+.product-price{
+    font-size: 24px;
+    padding: 10px 0;
+}
+.product-rating{
+    display: flex;
+    align-items: center;
+}
+.product-rating p{
+    padding-left: 10px;
+    font-weight: bold;
+    
+}
+.products>.popular-products-collection>.product>.product-rating>.fas{
+    color: #FB8200;
+    font-size: 14px;
+}
+
+/* -----------------------------------
+        CONTACT INFO STYLE
+------------------------------------ */
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    height: 150px;
+    border-radius: 7px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.1);
+}
+
+/* FOOTER STYLE */
+
+footer{
+    height: 240px;
+    color: white;
+    background-color: #0A0826;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer>h2{
+    color: white;
+}
+footer>p{
+    padding: 5px;
+    color: white;
+}
+footer>.social-icons>.fab{
+    font-size: 24px;
+padding: 10px;
+}
